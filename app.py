@@ -2,10 +2,6 @@ from flask import *
 import numpy as np
 import pandas as pd
 app = Flask(__name__)
-@app.route('/')
-def home():
-    return 'Mitesh'
-
 
 
 
@@ -24,11 +20,10 @@ def home():
 # # Pkl_Filename = "rf_tuned.pkl" 
 # # with open(Pkl_Filename, 'rb') as file:  
 # #     model = pickle.load(file)
-# @app.route('/')
+@app.route('/')
 
-# def hello_world():
-# #     return render_template('home.html')
-#     return 'hello'
+def hello_world():
+    return render_template('home.html')
 
 # # @app.route('/predict', methods=['POST','GET'])
 # # def predict():
