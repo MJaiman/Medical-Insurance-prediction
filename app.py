@@ -1,7 +1,7 @@
 from flask import *
 import numpy as np
 import pandas as pd
-app = Flask(__name__)
+
 
 
 
@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 # # import numpy as np
 
-# app = Flask(__name__, template_folder='./templates', static_folder='./static')
+app = Flask(__name__, template_folder='./templates', static_folder='./static')
 
 # # Pkl_Filename = "rf_tuned.pkl" 
 # # with open(Pkl_Filename, 'rb') as file:  
