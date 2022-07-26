@@ -1,7 +1,7 @@
 from flask import Flask, request, url_for, redirect, render_template
-import pickle
+# import pickle
 
-import numpy as np
+# import numpy as np
 
 app = Flask(__name__, template_folder='./templates', static_folder='./static')
 
@@ -11,7 +11,8 @@ app = Flask(__name__, template_folder='./templates', static_folder='./static')
 @app.route('/')
 
 def hello_world():
-    return render_template('home.html')
+#     return render_template('home.html')
+    return 'hello'
 
 # @app.route('/predict', methods=['POST','GET'])
 # def predict():
