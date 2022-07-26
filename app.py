@@ -1,25 +1,13 @@
 from flask import *
 import numpy as np
 import pandas as pd
-
-
-
-
-
-
-
-
-
-# from flask import Flask, request, url_for, redirect, render_template
-# # import pickle
-
-# # import numpy as np
+import pickle
 
 app = Flask(__name__, template_folder='./templates', static_folder='./static')
 
-# # Pkl_Filename = "rf_tuned.pkl" 
-# # with open(Pkl_Filename, 'rb') as file:  
-# #     model = pickle.load(file)
+Pkl_Filename = "rf_tuned.pkl" 
+with open(Pkl_Filename, 'rb') as file:  
+    model = pickle.load(file)
 @app.route('/')
 
 def hello_world():
